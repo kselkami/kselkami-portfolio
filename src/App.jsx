@@ -14,9 +14,7 @@ function App() {
         <div className="w-[70%] h-24 bg-gray-100 mx-auto translate-y-[50%] rounded-lg"></div>
       </div>
       <Work />
-      <section className={`bg-gradient-to-t from-gray-100 to-[#f1e0d6]`}>
-        <Contact />
-      </section>
+      <Contact />
       <Footer />
     </div>
   );

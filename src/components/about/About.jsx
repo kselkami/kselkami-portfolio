@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex flex-col-reverse lg:flex-row w-full max-w-[560px] md:max-w-[750px] lg:max-w-[1000px] xl:max-w-[1150px] mx-auto pt-16 mb-16"
+      className="flex flex-col-reverse lg:flex-row w-full max-w-[560px] md:max-w-[750px] lg:max-w-[1000px] xl:max-w-[1150px] mx-auto mt-32 mb-16 lg:mt-48 lg:mb-32"
     >
       <div className="flex flex-col align-center px-4 lg:flex-[2]">
         <div className="flex lg:items-center">
