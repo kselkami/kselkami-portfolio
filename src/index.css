@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background: rgb(20,80,81);
+    background: linear-gradient(198deg, rgba(20,80,81,1) 0%, rgba(26,103,105,1) 9%, rgba(41,157,159,1) 88%);
+    color: #fefefe; */
+  background-color: #f1e0d6;
+  font-size: 18px;
+}
