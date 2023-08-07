@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const About = () => {
   const [hovered, setHovered] = useState(false);
   let bg =
-    hovered === false
+    hovered == false
       ? 'https://i.ibb.co/dsYNN38/about.png'
       : 'https://i.ibb.co/cJvxW0q/dab.png';
   function changeBG() {
