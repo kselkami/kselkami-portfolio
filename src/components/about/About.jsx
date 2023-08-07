@@ -94,8 +94,8 @@ const About = () => {
       </div>
 
       {/* Right */}
-      <div className="relative flex items-center justify-center w-full h-full lg:flex-[1]">
-        <div className="relative mx-auto w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] border-2 border-white rounded-lg">
+      <div className="relative flex items-center lg:justify-center w-full h-full lg:flex-[1]">
+        <div className="relative ml-auto lg:ml-0 lg:mx-auto mr-10 lg:mr-0 w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] border-2 border-white rounded-lg">
           <div className="p-0 bg-white absolute translate-x-[10px] translate-y-[-14px] lg:translate-x-[20px] lg:translate-y-[-25px] w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] border-2 border-white rounded-lg">
             <img className="object-fit rounded-md" src={aboutIMG} alt="" />
           </div>
