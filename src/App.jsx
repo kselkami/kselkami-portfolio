@@ -8,10 +8,10 @@ import Footer from './components/footer/Footer';
 function App() {
   return (
     <div className="flex flex-col w-full min-h-screen text-gray-900">
-      <div className="bg-gray-900 text-gray-100 w-full h-full rounded-b-2xl">
+      <div className="bg-gray-900 text-gray-100 w-full h-full">
         <Navbar />
         <About />
-        <div className="w-[70%] h-24 bg-gray-100 mx-auto translate-y-[50%] rounded-lg"></div>
+        <div className="w-[70%] h-24 bg-gray-100 mx-auto translate-y-[50%] rounded-lg border-2 border-gray-900"></div>
       </div>
       <Work />
       <Contact />
