@@ -9,7 +9,7 @@ const Contact = () => {
       <div className="flex justify-center align-center w-full max-w-[560px] md:max-w-[750px] lg:max-w-[1000px] xl:max-w-[1150px] mx-auto px-4 my-20 lg:my-32">
         <div className="flex flex-col w-full">
           {/* title */}
-          <div className="my-4">
+          <div className="my-4 lg:mx-12">
             <h2 className="text-5xl font-bold mb-4">Let's work together</h2>
             <span className="italic">What to do need to get done?</span>
           </div>
@@ -48,9 +48,9 @@ const Contact = () => {
 
             {/* right */}
             <div className="w-full h-full flex flex-col gap-4 p-2">
-              <div className="h-full">
+              <div className="h-[60%]">
                 <textarea
-                  placeholder="Describe the problem"
+                  placeholder="I would like to build..."
                   className="bg-transparent border-2 border-gray-900 w-full h-full p-2 outline-none rounded-md"
                   name="details"
                 />
@@ -63,6 +63,14 @@ const Contact = () => {
               </button>
             </div>
           </form>
+
+          <div className="w-full h-full max-h-[250px] border-2 border-gray-900 rounded-lg overflow-hidden">
+            <img
+              className="object-cover hover:scale-[1.05] transition-transform duration-750"
+              src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/w_1920,c_limit/GoogleMapTA.jpg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ const Footer = () => {
             <span className="font-bold">Gooramotho Badisang</span>
           </div>
           <div>
-            <a className="flex gap-2 bg-gray-100 rounded-full p-1" href="#">
+            <a className="flex gap-2 bg-gray-100 rounded-lg p-1" href="#">
               <div className="flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
