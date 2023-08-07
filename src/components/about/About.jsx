@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import aboutIMG from '../../assets/aboutImg.png';
 
 const About = () => {
+  const [hovered, setHovered] = useState(false);
+  let bg = hovered == false ? aboutIMG : 'https://i.redd.it/exy5u47eq9071.png';
+  function changeBG() {
+    setHovered(!hovered);
+  }
+
   return (
     <div
       id="about"
@@ -96,8 +102,14 @@ const About = () => {
       {/* Right */}
       <div className="relative flex items-center lg:justify-center w-full h-full lg:flex-[1]">
         <div className="relative ml-auto lg:ml-0 lg:mx-auto mr-10 lg:mr-0 w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] border-2 border-white rounded-lg">
-          <div className="p-0 bg-white absolute translate-x-[10px] translate-y-[-14px] lg:translate-x-[20px] lg:translate-y-[-25px] w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] border-2 border-white rounded-lg">
-            <img className="object-fit rounded-md" src={aboutIMG} alt="" />
+          <div className="p-0 bg-white absolute translate-x-[10px] translate-y-[-14px] lg:translate-x-[20px] lg:translate-y-[-25px] w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] border-2 border-white rounded-lg overflow-hidden">
+            <img
+              onMouseEnter={changeBG}
+              onMouseLeave={changeBG}
+              className="object-fit object-center h-full rounded-md"
+              src={bg}
+              alt=""
+            />
           </div>
         </div>
       </div>
