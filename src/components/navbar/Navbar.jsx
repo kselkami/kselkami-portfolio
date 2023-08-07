@@ -22,7 +22,7 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          <a className="flex gap-1 px-2 py-2 border-b" href="#contact">
+          <a className="flex gap-1 px-2 py-2 border-b-2" href="#contact">
             <div>Hire Me</div>
           </a>
         </nav>

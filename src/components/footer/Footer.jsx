@@ -10,15 +10,15 @@ const Footer = () => {
             <span className="font-bold">Gooramotho Badisang</span>
           </div>
           <div>
-            <a className="flex gap-2 bg-gray-900 rounded-full p-1" href="#">
+            <a className="flex gap-2 bg-gray-100 rounded-full p-1" href="#">
               <div className="flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="#fefefe"
-                  className="w-5 h-5"
+                  strokeWidth={2}
+                  stroke="#111827"
+                  className="w-6 h-6"
                 >
                   <path
                     strokeLinecap="round"
