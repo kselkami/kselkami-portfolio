@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import aboutIMG from '../../assets/aboutImg.png';
+import dabIMG from '../../assets/dab.png';
 
 const About = () => {
   const [hovered, setHovered] = useState(false);
-  let bg = hovered == false ? aboutIMG : 'https://i.redd.it/exy5u47eq9071.png';
+  let bg = hovered == false ? aboutIMG : dabIMG;
   function changeBG() {
     setHovered(!hovered);
   }
