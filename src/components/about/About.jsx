@@ -103,8 +103,8 @@ const About = () => {
 
       {/* Right */}
       <div className="relative flex items-center lg:justify-center w-full h-full lg:flex-[1]">
-        <div className="relative ml-auto lg:ml-0 lg:mx-auto mr-10 lg:mr-0 w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] bg-gradient-to-r from-purple-400 to-yellow-400 p-1 rounded-lg">
-          <div className="bg-gradient-to-r from-purple-400 to-yellow-400 p-1 absolute translate-x-[10px] translate-y-[-14px] lg:translate-x-[20px] lg:translate-y-[-25px] w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] rounded-lg overflow-hidden">
+        <div className="relative ml-auto lg:ml-0 lg:mx-auto mr-10 lg:mr-0 w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] bg-gradient-to-r from-[#a4e6f3] to-[#ff96ff] p-1 rounded-lg">
+          <div className="bg-gradient-to-r from-[#a4e6f3] to-[#ff96ff] p-1 absolute translate-x-[10px] translate-y-[-14px] lg:translate-x-[20px] lg:translate-y-[-25px] w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] rounded-lg overflow-hidden">
             <img
               onMouseEnter={changeBG}
               onMouseLeave={changeBG}

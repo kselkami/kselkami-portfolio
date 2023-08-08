@@ -51,7 +51,7 @@ const ProjectCard = ({ props, index }) => {
           Demo
         </a>
         <a
-          className="py-2 px-4 bg-gray-100 border-2 border-black hover:shadow-md hover:shadow-black/40  rounded-md"
+          className="py-2 px-4 bg-gray-100 border-[3px] border-black hover:shadow-md hover:shadow-black/40  rounded-md"
           href={props.github}
         >
           Github
