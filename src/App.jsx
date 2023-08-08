@@ -13,7 +13,7 @@ function App() {
           <Navbar />
           <About />
           <div className="w-[70%] p-1 h-24 bg-gradient-to-r from-purple-400 to-yellow-400 mx-auto translate-y-[50%] rounded-lg border-gray-900">
-            <div className="w-full h-full rounded-md bg-gray-900"></div>
+            <div className="w-full h-full rounded-md bg-gray-100"></div>
           </div>
         </section>
       </div>
