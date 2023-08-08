@@ -4,7 +4,7 @@ const About = () => {
   const [hovered, setHovered] = useState(false);
   let bg =
     hovered == false
-      ? 'https://i.ibb.co/dsYNN38/about.png'
+      ? 'https://i.ibb.co/2YNm1Lc/dabedit.png'
       : 'https://i.ibb.co/cJvxW0q/dab.png';
   function changeBG() {
     setHovered(!hovered);
@@ -103,12 +103,12 @@ const About = () => {
 
       {/* Right */}
       <div className="relative flex items-center lg:justify-center w-full h-full lg:flex-[1]">
-        <div className="relative ml-auto lg:ml-0 lg:mx-auto mr-10 lg:mr-0 w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] border-2 border-white rounded-lg">
-          <div className="p-0 bg-white absolute translate-x-[10px] translate-y-[-14px] lg:translate-x-[20px] lg:translate-y-[-25px] w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] border-2 border-white rounded-lg overflow-hidden">
+        <div className="relative ml-auto lg:ml-0 lg:mx-auto mr-10 lg:mr-0 w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] bg-gradient-to-r from-purple-400 to-yellow-400 p-1 rounded-lg">
+          <div className="bg-gradient-to-r from-purple-400 to-yellow-400 p-1 absolute translate-x-[10px] translate-y-[-14px] lg:translate-x-[20px] lg:translate-y-[-25px] w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] rounded-lg overflow-hidden">
             <img
               onMouseEnter={changeBG}
               onMouseLeave={changeBG}
-              className="object-fit object-center h-full rounded-md"
+              className="object-fit object-center h-full rounded-md bg-gray-900"
               src={bg}
               alt=""
             />
