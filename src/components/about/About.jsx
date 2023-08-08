@@ -4,7 +4,7 @@ const About = () => {
   const [hovered, setHovered] = useState(false);
   let bg =
     hovered == false
-      ? 'https://i.ibb.co/2YNm1Lc/dabedit.png'
+      ? 'https://i.ibb.co/TTCzbJr/dabedit.png'
       : 'https://i.ibb.co/cJvxW0q/dab.png';
   function changeBG() {
     setHovered(!hovered);
