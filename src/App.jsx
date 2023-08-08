@@ -12,7 +12,7 @@ function App() {
         <section className="text-gray-100 bg-gray-900 border-gray-900 w-full h-full">
           <Navbar />
           <About />
-          <div className="w-[350px] p-1 h-24 bg-gradient-to-r from-[#a4e6f3] to-[#ff96ff] mx-auto translate-y-[50%] rounded-lg border-gray-900 md:translate-x-[-180px] lg:translate-x-[-300px] xl:translate-x-[-380px]">
+          <div className="w-full max-w-[350px] p-1 h-24 bg-gradient-to-r from-[#a4e6f3] to-[#ff96ff] mx-auto translate-y-[50%] rounded-lg border-gray-900 md:translate-x-[-180px] lg:translate-x-[-300px] xl:translate-x-[-380px]">
             <div className="w-full h-full rounded-md bg-gray-900 text-gray-100 text-4xl font-semibold flex justify-center items-center">
               Case Studies
             </div>
@@ -21,7 +21,7 @@ function App() {
       </div>
       <section className="w-full h-full bg-gray-100">
         <Work />
-        <div className="w-[350px] h-24 mx-auto translate-y-[50%] rounded-lg border-4 border-gray-900 md:translate-x-[-180px] lg:translate-x-[-300px] xl:translate-x-[-380px]">
+        <div className="w-full max-w-[350px] h-24 mx-auto translate-y-[50%] rounded-lg border-4 border-gray-900 md:translate-x-[-180px] lg:translate-x-[-300px] xl:translate-x-[-380px]">
           <div className="w-full h-full rounded-md bg-[#f1e0d6] text-gray-900 text-4xl font-semibold flex justify-center items-center">
             Contact
           </div>

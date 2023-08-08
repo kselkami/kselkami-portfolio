@@ -9,8 +9,10 @@ const ProjectCard = ({ props, index }) => {
           : 'max-w-[400px] md:max-w-full'
       }`}
     >
-      <span className="font-bold text-sm mb-2"># PF0{props.id}</span>
-      <h2 className="text-2xl font-bold mb-4">{props.title}</h2>
+      <span className="font-bold text-[12px] md:text-sm mb-2">
+        # PF0{props.id}
+      </span>
+      <h2 className="text-2xl md:text-3xl font-bold mb-4">{props.title}</h2>
       <div
         className={`relative mb-8 bg-black w-full overflow-y-hidden rounded-lg`}
       >
@@ -27,9 +29,7 @@ const ProjectCard = ({ props, index }) => {
         <span className="text-sm md:text-[18px] lg:text-[24px] font-bold">
           Description:
         </span>
-        <p className="text-sm lg:text-[18px] tracking-wide">
-          {props.description}
-        </p>
+        <p className="text-sm md:text-md lg:text-lg">{props.description}</p>
       </div>
       <div className="flex flex-col gap-2 mb-4">
         <span className="text-sm md:text-[16px] lg:text-[18px] font-bold ">

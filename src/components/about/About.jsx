@@ -1,7 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const About = () => {
   const [hovered, setHovered] = useState(false);
+  const [mousePosX, setMousePosX] = useState(10);
+  const [mousePosY, setMousePosY] = useState(-15);
+
+  useEffect(() => {
+    const handleMouseMove = (event) => {
+      setMousePosX(Math.ceil((event.clientX / window.innerWidth) * 8));
+      setMousePosY(
+        Math.ceil(
+          ((window.innerHeight - event.clientY) / window.innerHeight) * -15
+        ) - 10
+      );
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
   let bg =
     hovered == false
       ? 'https://i.ibb.co/TTCzbJr/dabedit.png'
@@ -14,12 +34,17 @@ const About = () => {
     <div
       id="about"
       className="flex flex-col-reverse lg:flex-row w-full max-w-[560px] md:max-w-[750px] lg:max-w-[1000px] xl:max-w-[1150px] mx-auto mt-32 mb-16 lg:mt-48 lg:mb-32"
+      onMouseOver={(e) => changeMousePos(e)}
     >
       <div className="flex flex-col align-center px-4 lg:flex-[2]">
         <div className="flex lg:items-center">
           <ul className="w-full font-bold">
-            <li className="text-5xl lg:text-7xl my-8 ">G. Badisang</li>
-            <li className="text-2xl mb-2 italic ml-4">Developer</li>
+            <li className="text-4xl md:text-5xl lg:text-7xl my-8 ">
+              G. Badisang
+            </li>
+            <li className="text-xl md:text-2xl mb-2 italic ml-4">
+              Web Developer
+            </li>
             <li>
               <ul className="flex gap-3 ml-4">
                 <li>
@@ -91,7 +116,7 @@ const About = () => {
           </ul>
         </div>
         <div className="my-6">
-          <p className="w-full max-w-[700px]">
+          <p className="text-[15px] md:text-md lg:text-lg w-full max-w-[700px]">
             I've honed my skills in HTML, CSS, and JavaScript and now React by
             learning the ins and outs of creating visually appealing and
             user-friendly websites. I'm excited to take on new challenges and
@@ -104,11 +129,16 @@ const About = () => {
       {/* Right */}
       <div className="relative flex items-center lg:justify-center w-full h-full lg:flex-[1]">
         <div className="relative ml-auto lg:ml-0 lg:mx-auto mr-10 lg:mr-0 w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] bg-gradient-to-r from-[#a4e6f3] to-[#ff96ff] p-1 rounded-lg">
-          <div className="bg-gradient-to-r from-[#a4e6f3] to-[#ff96ff] p-1 absolute translate-x-[10px] translate-y-[-14px] lg:translate-x-[20px] lg:translate-y-[-25px] w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] rounded-lg overflow-hidden">
+          <div
+            style={{
+              transform: `translate(${mousePosX}px,${mousePosY}px)`,
+            }}
+            className={`bg-gradient-to-r from-[#a4e6f3] to-[#ff96ff] p-1 absolute w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] rounded-lg overflow-hidden`}
+          >
             <img
               onMouseEnter={changeBG}
               onMouseLeave={changeBG}
-              className="object-fit object-center h-full rounded-md bg-gray-900"
+              className="object-fit object-center h-full rounded-md bg-gray-100"
               src={bg}
               alt=""
             />
