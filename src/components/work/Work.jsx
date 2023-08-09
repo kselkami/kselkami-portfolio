@@ -54,7 +54,7 @@ const Work = () => {
       id="projects"
       className="w-full max-w-[560px] md:max-w-[750px] lg:max-w-[1000px] xl:max-w-[1150px] mx-auto flex justify-center mt-32 lg:mt-48 lg:mb-48 mb-20"
     >
-      <div className="mx-4 flex flex-col md:grid md:grid-cols-2 gap-8">
+      <div className="mx-4 flex flex-col gap-8">
         {projects.map((project, index) => (
           <ProjectCard key={project.id} index={index} props={project} />
         ))}
