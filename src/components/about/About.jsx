@@ -127,21 +127,24 @@ const About = () => {
       </div>
 
       {/* Right */}
-      <div className="relative flex items-center lg:justify-center w-full h-full lg:flex-[1]">
-        <div className="relative ml-auto lg:ml-0 lg:mx-auto mr-10 lg:mr-0 w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] bg-gradient-to-r from-[#a4e6f3] to-[#ff96ff] p-1 rounded-lg">
+      <div className="relative flex items-center lg:justify-center mb-10 -mt-10 mx-4 lg:m-0 w-full h-full lg:flex-[1]">
+        <div className="relative ml-auto lg:ml-0 lg:mx-auto mr-10 lg:mr-0 w-full h-[200px] lg:w-[300px] lg:h-[300px] bg-gradient-to-r from-[#a4e6f3] to-[#ff96ff] p-1 rounded-lg">
           <div
             style={{
               transform: `translate(${mousePosX}px,${mousePosY}px)`,
             }}
-            className={`bg-gradient-to-r from-[#a4e6f3] to-[#ff96ff] p-1 absolute w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] rounded-lg overflow-hidden`}
+            className={`bg-gradient-to-r from-[#a4e6f3] to-[#ff96ff] p-2 absolute w-full h-[200px] lg:w-[300px] lg:h-[300px] rounded-lg overflow-hidden`}
           >
-            <img
-              onMouseEnter={changeBG}
-              onMouseLeave={changeBG}
-              className="object-fit object-center h-full rounded-md bg-gray-100"
-              src={bg}
-              alt=""
-            />
+            <div className="w-full h-full rounded-md bg-gray-100">
+              <img
+                onMouseEnter={changeBG}
+                onMouseLeave={changeBG}
+                className="object-fit object-center h-full mx-auto
+                  rounded-md"
+                src={bg}
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
