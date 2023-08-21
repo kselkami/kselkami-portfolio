@@ -24,8 +24,9 @@ const About = () => {
 
   let bg =
     hovered == false
-      ? 'https://i.ibb.co/TTCzbJr/dabedit.png'
+      ? 'https://i.ibb.co/cJvxW0q/dab.png'
       : 'https://i.ibb.co/cJvxW0q/dab.png';
+      // 'https://i.ibb.co/cJvxW0q/dab.png' 'https://i.ibb.co/TTCzbJr/dabedit.png'
   function changeBG() {
     setHovered(!hovered);
   }
@@ -116,7 +117,7 @@ const About = () => {
           </ul>
         </div>
         <div className="my-6">
-          <p className="text-[15px] md:text-md lg:text-lg w-full max-w-[700px]">
+          <p className="bg-gray-900 text-[15px] md:text-md lg:text-lg w-full max-w-[700px]">
             I've honed my skills in HTML, CSS, and JavaScript and now React by
             learning the ins and outs of creating visually appealing and
             user-friendly websites. I'm excited to take on new challenges and

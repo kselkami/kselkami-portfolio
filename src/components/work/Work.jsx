@@ -5,10 +5,10 @@ const Work = () => {
   const projects = [
     {
       id: 1,
-      title: 'Project 1',
-      img: 'https://i.pinimg.com/736x/ae/ca/f7/aecaf7f160540d751589beec3c95d023.jpg',
+      title: 'MotYeast E-commerce Store',
+      img: 'https://i.ibb.co/Tbypyft/selkshop.png',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        'An e-commerce store aimed at affordable footwear for skaters. It is responsive and functional including features like a shopping a cart, and checkout with Stripe',
       tech: ['React', 'Tailwind', 'NodeJS'],
       demo: 'https://i.pinimg.com/736x/ae/ca/f7/aecaf7f160540d751589beec3c95d023.jpg',
       github:

@@ -22,7 +22,7 @@ const ProjectCard = ({ props, index }) => {
           className={`relative bg-black w-full overflow-y-hidden rounded-lg`}
         >
           <img
-            className={`w-full object-cover p-8 ${
+            className={`w-full object-cover object-top p-8 ${
               index === 0 ? 'h-[400px]' : 'h-full'
             }`}
             src={props.img}
@@ -32,7 +32,7 @@ const ProjectCard = ({ props, index }) => {
 
         {/* Details container */}
 
-        <div className="flex flex-col m-4 p-4 -mt-12 lg:m-4 lg:-ml-12 z-[1] bg-gray-100 border-4 border-gray-900  rounded-lg">
+        <div className="flex flex-col m-10 p-6 -mt-12 lg:m-4 lg:-ml-12 z-[1] bg-gray-100 border-4 border-gray-900  rounded-lg">
           <div className="flex flex-col gap-2 mb-8">
             <span className="text-sm md:text-[18px] lg:text-[24px] font-bold">
               Description:
